@@ -3,6 +3,7 @@ package com.my.tutorial;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -18,21 +19,26 @@ public class Loader {
 	// Instance
 	@Instance
 	public static Loader INSTANCE = new Loader();
-	
+	// SideProxy
+	@SidedProxy(clientSide="com.my.tutorial.ClientProxy", serverSide="com.my.tutorial.ServerProxy")
+	public static CommonProxy proxy;
 	
 	// PreInit
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		System.out.println("Hello, from preInit");
+		proxy.preInit(e);
 	}
 	// Init
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
 		System.out.println("Hello, from init");
+		proxy.init(e);
 	}
 	// PostInit
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		System.out.println("Hello, from postInit");
+		proxy.postInit(e);
 	}
 }
