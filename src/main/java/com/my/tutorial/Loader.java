@@ -9,29 +9,30 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid=Loader.ID, name=Loader.NAME, version=Loader.VERSION)
 public class Loader {
-	public final static String ID = "my_tutorial";
-	public final static String NAME = "My Tutorial";
-	public final static String VERSION = "mc18:f1563:m1";
-	
+	// ID
+	public static final String ID = "my_tutorial";
+	// NAME
+	public static final String NAME = "My Tutorial";
+	// VERSION
+	public static final String VERSION = "mc18:f1563:m1";
+	// Instance
 	@Instance
 	public static Loader INSTANCE = new Loader();
 	
 	
+	// PreInit
 	@EventHandler
-	// PreInit - This is used to register
 	public void preInit(FMLPreInitializationEvent e) {
-		System.out.println("Hello, From preInit");
+		System.out.println("Hello, from preInit");
 	}
-	
+	// Init
 	@EventHandler
-	// Init - This recipes 
 	public void init(FMLInitializationEvent e) {
-		System.out.println("Hello, From init");
+		System.out.println("Hello, from init");
 	}
-	
+	// PostInit
 	@EventHandler
-	// PostInit -
 	public void postInit(FMLPostInitializationEvent e) {
-		System.out.println("Hello, From postInit");
+		System.out.println("Hello, from postInit");
 	}
 }
