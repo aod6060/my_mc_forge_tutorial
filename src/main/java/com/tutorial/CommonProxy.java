@@ -1,7 +1,7 @@
-package com.my.tutorial;
+package com.tutorial;
 
-import com.my.tutorial.creativetabs.TutorialCreativeTabs;
-import com.my.tutorial.items.TutorialItems;
+import com.tutorial.creativetabs.TutorialCreativeTabs;
+import com.tutorial.items.TutorialItems;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

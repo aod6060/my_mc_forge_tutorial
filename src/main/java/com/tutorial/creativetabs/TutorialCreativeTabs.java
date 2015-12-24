@@ -1,4 +1,4 @@
-package com.my.tutorial.creativetabs;
+package com.tutorial.creativetabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;

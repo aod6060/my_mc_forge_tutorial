@@ -1,10 +1,10 @@
-package com.my.tutorial;
+package com.tutorial;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends CommonProxy{
+public class ServerProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
@@ -23,5 +23,5 @@ public class ClientProxy extends CommonProxy{
 		// TODO Auto-generated method stub
 		super.postInit(e);
 	}
-
+	
 }

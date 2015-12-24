@@ -1,6 +1,6 @@
-package com.my.tutorial.items;
+package com.tutorial.items;
 
-import com.my.tutorial.creativetabs.TutorialCreativeTabs;
+import com.tutorial.creativetabs.TutorialCreativeTabs;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;

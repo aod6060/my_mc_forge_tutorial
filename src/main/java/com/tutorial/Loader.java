@@ -1,4 +1,4 @@
-package com.my.tutorial;
+package com.tutorial;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -20,7 +20,7 @@ public class Loader {
 	@Instance
 	public static Loader INSTANCE = new Loader();
 	// SideProxy
-	@SidedProxy(clientSide="com.my.tutorial.ClientProxy", serverSide="com.my.tutorial.ServerProxy")
+	@SidedProxy(clientSide="com.tutorial.ClientProxy", serverSide="com.tutorial.ServerProxy")
 	public static CommonProxy proxy;
 	
 	// PreInit
