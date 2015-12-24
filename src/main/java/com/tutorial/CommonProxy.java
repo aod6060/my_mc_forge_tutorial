@@ -10,14 +10,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 	// PreInit
 	public void preInit(FMLPreInitializationEvent e) {
-		
+		// Create
 		TutorialItems.create();
-		
+		// Register
+		TutorialItems.register();
+		// Create Creative Tabs
 		TutorialCreativeTabs.create();
-		
+		// Set Creative Tabs
 		TutorialItems.setCreativeTabs();
-		
-		
 	}
 	// Init
 	public void init(FMLInitializationEvent e) {

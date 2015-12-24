@@ -8,7 +8,7 @@ public final class TutorialCreativeTabs {
 	public static CreativeTabs tabMyTutorial;
 	
 	public static void create() {
-		tabMyTutorial = new CreativeTabs("tab_my_tutorial") {
+		tabMyTutorial = new CreativeTabs("tab_tutorial") {
 
 			@Override
 			public Item getTabIconItem() {

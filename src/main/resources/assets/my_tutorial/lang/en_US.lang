@@ -1,5 +1,5 @@
 # CreativeTabs
-itemGroup.tab_my_tutorial=Tutorial
+itemGroup.tab_tutorial=Tutorial
 # Items
-
+item.item_tutorial.name=Tutorial Item
 # Tiles (aka. Blocks)

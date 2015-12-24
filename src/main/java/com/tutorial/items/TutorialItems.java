@@ -12,10 +12,10 @@ public final class TutorialItems {
 	
 	public static void create() {
 		itemTutorial = new Item().setUnlocalizedName("item_tutorial");
-		
+	}
+	
+	public static void register() {
 		GameRegistry.registerItem(itemTutorial, "item_tutorial");
-		
-		
 	}
 	
 	public static void setCreativeTabs() {
